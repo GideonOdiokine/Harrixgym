@@ -22,7 +22,7 @@
         <i class="fa fa-bars menu" aria-hidden="true"></i>
       </div>
         <ul>
-            <li><a href="#main-head">Home</a></li>
+            <li><a href="#showcase">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#team">Team</a></li>
@@ -486,20 +486,7 @@
     </div>
 
     <p>Copyrights &copy; 2020 <span>Harrixcode Designs</span></p>
-  </footer>
-
- 
-
-
-
-
-
-
-
-
-
-
-
+	</footer>
 
 <!--JS & JQUERY LINKS-->
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -510,6 +497,21 @@
       $('ul').toggleClass('active');
     })
   })
+	
+ $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
  </script>
 </body>
 </html>
