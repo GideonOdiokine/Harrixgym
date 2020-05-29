@@ -170,11 +170,11 @@ body {
 }
 
 /*SERVICES SECTION STARTS HERE*/
-.services {
+#services {
   width: 100%;
 }
 
-.services .serv {
+#services .serv {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -185,25 +185,25 @@ body {
           align-items: center;
 }
 
-.services .serv .serv-box {
+#services .serv .serv-box {
   width: 88%;
   padding: 6%;
 }
 
-.services .serv .serv-box h2 {
+#services .serv .serv-box h2 {
   font-size: 40px;
 }
 
-.services .serv .serv-box h3 {
+#services .serv .serv-box h3 {
   font-size: 50px;
 }
 
-.services .serv .serv-box img {
+#services .serv .serv-box img {
   width: 100%;
   height: 100%;
 }
 
-.services .serv .servs {
+#services .serv .servs {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -214,11 +214,11 @@ body {
           align-items: center;
 }
 
-.services .serv .servs .ser {
+#services .serv .servs .ser {
   width: 100%;
 }
 
-.services .serv .servs .ser i:before {
+#services .serv .servs .ser i:before {
   font-size: 40px;
   background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
   color: #fff;
@@ -228,7 +228,7 @@ body {
 /*SERVICES SECTION ENDS HERE*/
 /*MOBILE-VIEW STARTS HERE*/
 @media screen and (max-width: 800px) {
-  .services {
+  #services {
     width: 100%;
   }
   .services .serv {
@@ -237,21 +237,21 @@ body {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  .services .serv .serv-box {
+  #services .serv .serv-box {
     width: 88%;
     padding: 6%;
   }
-  .services .serv .serv-box h2 {
+  #services .serv .serv-box h2 {
     font-size: 24px;
   }
-  .services .serv .serv-box h3 {
+  #services .serv .serv-box h3 {
     font-size: 30px;
   }
   .services .serv .serv-box img {
     width: 100%;
     height: 100%;
   }
-  .services .serv .servs {
+  #services .serv .servs {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -261,10 +261,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .services .serv .servs .ser {
+  #services .serv .servs .ser {
     width: 100%;
   }
-  .services .serv .servs .ser i:before {
+  #services .serv .servs .ser i:before {
     font-size: 60px;
     background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
     color: #fff;
