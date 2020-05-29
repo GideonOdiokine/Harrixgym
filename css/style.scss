@@ -1,0 +1,1034 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(250, 248, 248);
+}
+
+#main-head{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    width: 100%;
+
+    .logo h1{
+       font-size: 42px;
+    }
+
+    
+        
+    nav {
+        .toggle{
+          width: 100%;
+          padding: 10px 20px;
+          text-align: right;
+          box-sizing: border-box;
+          color: #fff;
+          font-size: 30px;
+          display: none;
+        }
+    
+    
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        li{
+            font-size: 20px;
+            padding-left: 6%;
+            
+
+            a{
+                color: #fff;
+                text-decoration: none;
+                transition: all .3s ease;
+
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width: 800px){
+    #main-head{
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+        padding: 2%;
+        width: 100%;
+        background-color: #fd0054;
+        opacity: 0.7;
+    
+        .logo h1{
+           font-size: 20px;
+        }
+
+     nav{
+        .toggle{
+          display: block;
+        }
+    
+    
+    ul{
+       width: 100%;
+       display: none;
+       background: #fd0054;
+       padding: 2%;
+
+        li{
+           display: block;
+           text-align: left;
+           font-size: 16px;
+           font-weight: bold;
+          
+        }
+    }
+    .active{
+        display: block;
+    }
+}
+}
+}
+
+
+#showcase{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55)), url(/img/bg_3.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+
+    .show-cont h2{
+      font-size: 80px;
+    }
+
+    .show-cont p{
+        font-size: 40px;
+    }
+
+    .shwbtn{
+        padding: 3% 5%;
+        background-color: #fd0054;
+        font-size: 20px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: all .3s linear;
+
+        &:hover{
+            background-color: #fff;
+            color: #fd0054;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    #showcase{
+       
+        height: 30vh;
+       
+        .show-cont h2{
+          font-size: 35px;
+        }
+    
+        .show-cont p{
+            font-size: 20px;
+        }
+    
+        .shwbtn{
+            padding: 2% 4%;
+            font-size: 16px;
+           
+        }
+    }
+    
+}
+
+
+/*SERVICES SECTION STARTS HERE*/
+
+.services{
+    width: 100%;
+    
+
+    .serv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        align-items: center;
+
+        .serv-box{
+            width: 88%;
+            padding: 6%;
+        }
+
+        .serv-box h2{
+            font-size: 40px;
+        }
+
+        .serv-box h3{
+            font-size: 50px;
+        }
+
+        .serv-box img{
+            width: 100%;
+            height: 100%;
+        }
+        .servs{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            align-items: center;
+
+            .ser{
+                width: 100%;
+
+                 i:before{
+                    font-size: 40px;
+                    background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
+                    color: #fff;
+                    padding: 5%;
+                }
+            }
+
+        }
+    }
+}
+
+/*SERVICES SECTION ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+
+@media screen and (max-width: 800px){
+    .services{
+        width: 100%;
+        
+        .serv{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+            .serv-box{
+                width: 88%;
+                padding: 6%;
+            }
+    
+            .serv-box h2{
+                font-size: 24px;
+            }
+    
+            .serv-box h3{
+                font-size: 30px;
+            }
+
+            .serv-box img{
+                width: 100%;
+                height: 100%;
+            }
+            .servs{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+                align-items: center;
+    
+                .ser{
+                    width: 100%;
+    
+                     i:before{
+                        font-size: 60px;
+                        background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
+                        color: #fff;
+                        padding: 10%;
+                    }
+                }
+    
+            }
+        }
+    }
+   
+}
+
+/*MOBILE-VIEW ENDS HERE*/
+
+/*PARALLEX STARTS HERE*/
+
+.parallax{
+    background: url(/img/danielle-cerullo-CQfNt66ttZM-unsplash.jpg) repeat fixed center;
+    width: 100%;
+    height: auto;
+}
+
+.parallax-inner{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #fd0054;
+    opacity: 0.75;
+    text-align: center;
+}
+
+.parallax-inner h1{
+    font-size: 500%;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 8%;
+}
+
+.parallax-inner .btn{
+    width: 20%;
+    border: 3px solid white;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color color 1s linear;
+}
+
+.parallax-inner .btn:hover{
+    background-color: #f00;
+    color: #fff;
+}
+
+/*PARALLEX ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+@media screen and (max-width: 800px){
+      .parallax-inner .btn{
+           font-size: 16px;
+       }
+       .parallax-inner h1{
+        font-size: 22px;
+        margin-bottom: 5%;
+    }
+}
+
+#about{
+    width: 100%;
+    margin-bottom: 3%;
+
+    .abouts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .abt-img img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .abt-cont{
+            padding: 8% 5%;
+            line-height: 1.4;
+
+            h3{
+                font-size: 38px;
+            }
+
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    #about{
+        .abouts{
+            grid-template-columns: 1fr;
+
+            .abt-cont{
+                h3{
+                    font-size: 25px;
+                }
+
+                p{
+                font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+#team{
+    width: 100%;
+    
+    h2{
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .coaches{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        grid-column-gap: 20px;
+        padding: 2%;
+
+        .coach{
+          background-color: #fff;
+        
+
+          img{
+          width: 100%;
+          height: auto;
+        }
+
+        .coach-details{
+            padding:2%;
+
+            h3{
+                font-size: 26px;
+            }
+
+            p{
+                font-size: 18px;
+            }
+        }
+
+        .coach-socials{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 2%;
+
+          img{
+              width: 15%;
+          }
+        }
+
+    }
+
+    }
+}
+
+/*MOBILE-VIEW STARTS HERE*/
+
+@media screen and (max-width: 800px){
+    #team{
+        background: #333;
+
+        h2{
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .coaches{
+            grid-template-columns: repeat(1, 1fr);
+
+            .coach{
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+/*MOBILE-VIEW ENDS HERE*/
+
+/*WORKOUT SECTION STARTS HERE*/
+
+#workout{
+     padding: 1%;
+     line-height: 1.4;
+     text-align: center;
+     margin-bottom: 3%;
+
+      h2{
+          font-size: 32px;
+          margin-bottom: 2%;
+      }
+    .workouts{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+
+        .workout{
+
+            background-color: #fff;
+            
+            .conts{
+                padding: 3%;
+            
+
+            h3{
+                font-size: 26px;
+                
+            }
+
+            p{
+                font-size: 18px;
+                
+            }
+
+            .wrk-btn{
+                background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
+                padding: 3% 4%;
+                border: none;
+                color: #fff;
+            }
+        }
+
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .wrk-main{
+        background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
+        padding: 2% 5%;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+/*WORKOUT ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+@media screen and (max-width: 800px){
+    #workout{
+        width: 90%;
+        padding: 5%;
+        
+        h2{
+            font-size: 30px;
+        }
+
+        .workouts{
+            grid-template-columns: 1fr;
+
+           .workout .conts{
+                h3{
+                    font-size: 20px;
+                }
+
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+/*MOBILE-VIEW ENDS HERE*/
+
+/*PRICE SECTION STARTS HERE*/
+
+#price{
+    padding: 4%;
+    text-align: center;
+
+    h2{
+        font-size: 32px;
+        margin-bottom: 3%;
+    }
+
+    .pricings{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        grid-gap: 20px;
+
+        .pricing{
+            background: #fff;
+            h3{
+                font-size: 40px;
+                color: #fd6b00;
+
+                span{
+                    vertical-align: super;
+                    font-size: 20px;
+                }
+            }
+
+            h4{
+                color: #333;
+                font-size: 22px;
+            }
+
+            .btn{
+                padding: 5% 15%;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                color: #fff;
+                background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
+            }
+            .features{
+                h3{
+                    font-size: 20px;
+                }
+
+                p{
+                    font-size: 18px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+/*PRICE ENDS HERE*/
+
+@media screen and (max-width: 800px){
+    #price{
+        padding: 4%;
+        text-align: center;
+    
+        h2{
+            font-size: 25px;
+            margin-bottom: 5%;
+        }
+    
+        .pricings{
+            grid-template-columns: 1fr;
+
+            .pricing{
+                
+
+                h3{
+                    font-size: 30px;
+                    color: #fd6b00;
+    
+                    span{
+                        vertical-align: super;
+                        font-size: 15px;
+                    }
+                }
+    
+                h4{
+                    color: #333;
+                    font-size: 18px;
+                }
+    
+                .btn{
+                    padding: 3% 8%;
+                    font-size: 14px;
+                }
+                .features{
+                    h3{
+                        font-size: 20px;
+                    }
+    
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*MOBILE-VIEW ENDS HERE*/
+
+/*TESTIMONIALS STARTS HERE*/
+
+#testimonials{
+    padding: 4%;
+    text-align: center;
+    background: #fff;
+
+    h2{
+        font-size: 32px;
+        margin-bottom: 3%;
+    }
+
+    .testimonials{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        grid-gap: 20px;
+       
+
+        .testimony{
+
+            .client-msg{
+                border-left: 3px solid #fd0054;
+                line-height: 1.5;
+                padding: 1em;
+            }
+
+
+            .client-img{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 5px;
+                align-items: center;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+/*TESTIMONIALS END HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+
+@media screen and (max-width: 800px){
+    #testimonials{
+      
+        h2{
+            font-size: 25px;
+            margin-bottom: 3%;
+        }
+    
+        .testimonials{
+            grid-template-columns: 1fr;
+           
+           
+    
+            .testimony{
+    
+                .client-msg{
+                    border-left: 1.5px solid #fd0054;
+                    line-height: 1.4;
+                    padding: 14px;
+                }
+    
+    
+                .client-img{
+                    grid-template-columns: repeat(2, 1fr);
+                   
+    
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*MOBILE-VIEW ENDS HERE*/
+
+/*APPOINTMENT SECTION STARTS HERE*/
+
+
+#appointment{
+
+    .appointments{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+        .appointment-img img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .appointment-form{
+            background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
+            padding: 2%;
+
+            .names{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                margin-bottom: 8%;
+                
+               
+
+                input[type="text"]{
+                    color: #fff;
+                    padding: 5%;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background: transparent;
+                    border-bottom: 1px solid #fff;
+
+                }
+            }
+
+            .times{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                margin-bottom: 8%;
+
+                input[type="text"]{
+                    color: #fff;
+                    padding: 1%;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background: transparent;
+                    border-bottom: 1px solid #fff;
+                }
+
+                input[type="date"]{
+                    color: #fff;
+                    padding: 5%;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background: transparent;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            .msg{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+
+                textarea{
+                    color: #fff;
+                    padding: 1%;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background: transparent;
+                    border-bottom: 1px solid #fff;
+                }
+
+                input[type="submit"]{
+                    background-color: #fff;
+                    color: #fd0054;
+                    border: none;
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+    }
+}
+
+/*APPOINTMENT ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+
+@media screen and (max-width: 800px){
+    #appointment{
+
+        .appointments{
+            grid-template-columns: 1fr;
+        
+
+        .appointment-form{
+            background: linear-gradient(136deg, #fd0054 40%, #fd6b00 100%);
+            padding: 3%;
+
+            .names{
+                grid-template-columns: 1fr;
+               
+                
+               
+
+                input[type="text"]{
+                    font-size: 16px;
+                }
+            }
+
+            .times{
+                grid-template-columns: 1fr;
+                margin-bottom: 8%;
+
+                input[type="text"]{
+                    color: #fff;
+                    padding: 1%;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background: transparent;
+                    border-bottom: 1px solid #fff;
+                }
+
+                input[type="date"]{
+                    color: #fff;
+                    padding: 5%;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background: transparent;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            .msg{
+                
+                grid-template-columns: 1fr;
+                align-items: center;
+                
+
+                textarea{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                input[type="submit"]{
+                    font-size: 18px;
+                    padding: 1em;
+                }
+
+            }
+        }
+    }
+ }
+}
+
+/*ENDS HERE*/
+
+/*GALLERY SECTION STARTS HERE*/
+
+#gallery{
+    text-align: center;
+
+    .galleries{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+
+
+        .gallery{
+            
+                h3{
+                    font-size: 25px;
+                }
+
+                h4{
+                    font-size: 40px;
+                    color: #fd0054;
+                }
+            
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/*GALLERY ENDS HERE*/
+
+@media screen and (max-width: 800px){
+    #gallery{
+        
+    
+        .galleries{
+            
+            grid-template-columns: repeat(2, 1fr);
+            
+    
+    
+            .gallery{
+                h3{
+                    font-size: 18px;
+                }
+
+                h4{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+/*FOOTER STARTS HERE*/
+
+footer{
+    background: #000;
+    color: #fff;
+    padding: 5%;
+    text-align: center;
+    line-height: 1.5;
+
+    p{
+        font-size: 22px;
+
+        span{
+            color: #fd0054;
+            font-weight: bolder;
+        }
+    }
+
+
+    .footer-conts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+
+        .conts{
+            p{
+                font-size: 20px;
+            }
+
+            a{
+                color: #fff;
+                font-size: 20px;
+                text-decoration: none
+            }
+        }
+        
+    }
+}
+
+/*ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+
+@media screen and (max-width: 800px){
+    footer{
+       
+    
+        p{
+            font-size: 22px;
+    
+            span{
+               
+                font-weight: bold;
+            }
+        }
+    
+    
+        .footer-conts{
+           
+            grid-template-columns: 1fr;
+           
+    
+    
+            .conts{
+                p{
+                    font-size: 18px;
+                }
+    
+                a{
+                  
+                    font-size: 18px;
+                   
+                }
+            }
+            
+        }
+    }
+}
