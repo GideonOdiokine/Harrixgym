@@ -5,6 +5,7 @@ body {
           box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #faf8f8;
+  scroll-behavior: smooth;
 }
 
 #main-head {
