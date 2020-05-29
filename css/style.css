@@ -20,6 +20,8 @@ body {
       justify-content: space-around;
   color: #fff;
   width: 100%;
+  background: #fd0054;
+  opacity: 0.8;
 }
 
 #main-head .logo h1 {
