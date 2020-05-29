@@ -6,6 +6,8 @@ body{
     background: rgb(250, 248, 248);
 }
 
+/*MAIN-HEAD STARTS HERE*/
+
 #main-head{
     position: fixed;
     display: flex;
@@ -57,6 +59,9 @@ body{
 }
 }
 
+/*MAIN-HEAD ENDS HERE*/
+
+/*MOBILE-VIEW*/
 @media screen and (max-width: 800px){
     #main-head{
         align-items: center;
@@ -97,7 +102,9 @@ body{
 }
 }
 }
+/*MOBILE-VIEW ENDS HERE*/
 
+/*SHOWCASE STARTS HERE*/
 
 #showcase{
     position: relative;
@@ -139,6 +146,10 @@ body{
     }
 }
 
+/*SHOWCASE ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+
 @media screen and (max-width: 800px){
     #showcase{
        
@@ -160,6 +171,8 @@ body{
     }
     
 }
+
+/*MOBILE-VIEW ENDS HERE*/
 
 
 /*SERVICES SECTION STARTS HERE*/
@@ -319,6 +332,10 @@ body{
     }
 }
 
+/*MOBILE-VIEW ENDS HERE*/
+
+/*ABOUT STARTS HERE*/
+
 #about{
     width: 100%;
     margin-bottom: 3%;
@@ -347,6 +364,10 @@ body{
     }
 }
 
+/*ABOUT ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
+
 @media screen and (max-width: 800px){
     #about{
         .abouts{
@@ -364,6 +385,10 @@ body{
         }
     }
 }
+
+/*MOBILE-VIEW ENDS HERE*/
+
+/*TEAM STARTS HERE*/
 
 
 #team{
@@ -417,6 +442,8 @@ body{
 
     }
 }
+
+/*TEAM ENDS HERE*/
 
 /*MOBILE-VIEW STARTS HERE*/
 
@@ -590,6 +617,8 @@ body{
 }
 
 /*PRICE ENDS HERE*/
+
+/*MOBILE-VIEW STARTS HERE*/
 
 @media screen and (max-width: 800px){
     #price{
@@ -930,6 +959,8 @@ body{
 
 /*GALLERY ENDS HERE*/
 
+/*MOBILE-VIEW STARTS HERE*/
+
 @media screen and (max-width: 800px){
     #gallery{
         
@@ -952,6 +983,8 @@ body{
         }
     }
 }
+
+/*MOBILE-VIEW ENDS HERE*/
 
 /*FOOTER STARTS HERE*/
 
@@ -1032,3 +1065,4 @@ footer{
         }
     }
 }
+/*ENDS HERE*/
